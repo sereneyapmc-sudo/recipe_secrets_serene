@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Secrets Restaurant | Contact</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Recipe <span>Secrets</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="specials.html">Specials</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container"><h1>Get In Touch</h1></div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <h3>Visit Us</h3>
+      <p>123 Harvest Lane<br>Maple Town, ST 54321</p>
+
+      <h3>Hours</h3>
+      <p>Tuesday&ndash;Sunday: 11am&ndash;9pm<br>Monday: Closed</p>
+
+      <h3>Phone &amp; Email</h3>
+      <p>(555) 123-4567<br>hello@recipesecrets.com</p>
+
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps?q=Maple+Town&output=embed"
+          width="100%" height="220" style="border:0;" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Restaurant location map">
+        </iframe>
+      </div>
+    </div>
+
+    <div>
+      <div id="contact-success">Thanks for reaching out! We'll get back to you within one business day.</div>
+      <form id="contact-form">
+        <div>
+          <label for="c-name">Full Name</label>
+          <input type="text" id="c-name" name="name" required>
+        </div>
+        <div>
+          <label for="c-email">Email Address</label>
+          <input type="email" id="c-email" name="email" required>
+        </div>
+        <div>
+          <label for="c-subject">Subject</label>
+          <input type="text" id="c-subject" name="subject" required>
+        </div>
+        <div>
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn" style="justify-self:center;">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Recipe Secrets</h4>
+        <p>123 Harvest Lane<br>Maple Town, ST 54321</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="about.html">About</a><br>
+        <a href="specials.html">Specials</a><br>
+        <a href="reservation.html">Reservation</a><br>
+        <a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>(555) 123-4567<br>hello@recipesecrets.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Recipe Secrets Restaurant. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
