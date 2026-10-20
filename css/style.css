@@ -6,7 +6,7 @@
   --color-accent: #d9a74a;
   --color-text: #2b2420;
   --color-text-light: #6b6058;
-  --color-bg: #fffdf9;
+  --color-bg: #ffd9e8;
   --color-bg-alt: #f6efe4;
   --color-border: #e5dcc9;
   --font-heading: Georgia, 'Times New Roman', serif;
@@ -112,7 +112,12 @@ img {
 
 /* Hero */
 .page-hero {
-  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  background:
+    linear-gradient(135deg, rgba(92, 33, 33, 0.92), rgba(122, 46, 46, 0.92)),
+    url('../images/hero-restaurant.svg');
+  background-size: cover, cover;
+  background-position: center, center bottom;
+  background-repeat: no-repeat, no-repeat;
   color: #fff;
   padding: 72px 0;
   text-align: center;
@@ -124,15 +129,37 @@ img {
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  background-color: var(--color-primary-dark);
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.3) 9px, transparent 10px);
+  background-size: 34px 34px;
   color: #fff;
   padding: 110px 0;
   text-align: center;
 }
 
 .hero h1 {
-  color: #fff;
+  color: #fff200;
   font-size: 2.6rem;
+  text-shadow:
+    0 0 10px rgba(255, 242, 0, 0.8),
+    0 0 20px rgba(255, 242, 0, 0.6),
+    0 0 40px rgba(255, 242, 0, 0.4);
+  animation: glow-flow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow-flow {
+  from {
+    text-shadow:
+      0 0 10px rgba(255, 242, 0, 0.8),
+      0 0 20px rgba(255, 242, 0, 0.6),
+      0 0 40px rgba(255, 242, 0, 0.4);
+  }
+  to {
+    text-shadow:
+      0 0 18px rgba(255, 242, 0, 1),
+      0 0 36px rgba(255, 242, 0, 0.9),
+      0 0 60px rgba(255, 242, 0, 0.7);
+  }
 }
 
 .hero p {
